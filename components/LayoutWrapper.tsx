@@ -20,7 +20,7 @@ const LayoutWrapper = ({ children }: Props) => {
     <SectionContainer>
       <div
         dir={dir}
-        className={`${inter.className} flex h-screen flex-col justify-between font-sans`}
+        className={`${inter.className} flex h-screen flex-col justify-between font-noto-sans-ar`}
       >
         <Header />
         <main className="mb-auto">{children}</main>

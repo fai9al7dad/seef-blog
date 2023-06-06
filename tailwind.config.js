@@ -1,5 +1,4 @@
 // @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 // ../node_modules/pliny/dist/**/*.mjs is needed for monorepo setup
@@ -28,7 +27,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
+        sans: ['var(--font-noto-sans-ar)'],
       },
       colors: {
         primary: colors.teal,

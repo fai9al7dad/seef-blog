@@ -27,6 +27,10 @@ export default function About({ authors }: InferGetStaticPropsType<typeof getSta
         {
           authors.map(item=>{
             return (
+              <div
+                key={item.name}
+              >
+
               <div className="items-start xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0 py-8">
          
               <div className="flex flex-col items-center space-x-2 ">
@@ -51,6 +55,7 @@ export default function About({ authors }: InferGetStaticPropsType<typeof getSta
               <div className="prose max-w-none pb-8 pt-8 dark:prose-dark xl:col-span-2
                 whitespace-pre-line
               ">{item.body.raw}</div>
+            </div>
             </div>
             )
           })

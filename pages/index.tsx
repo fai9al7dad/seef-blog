@@ -56,7 +56,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                               {title}
                             </Link>
                           </h2>
-                          <div className="flex flex-wrap">
+                          <div className="flex flex-wrap mt-0.5">
                             {tags.map((tag) => (
                               <Tag key={tag} text={tag} />
                             ))}
@@ -72,7 +72,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Read more &rarr;
+                          إقرأ المزيد &larr;
                         </Link>
                       </div>
                     </div>
@@ -90,15 +90,15 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="All posts"
           >
-            All Posts &rarr;
+            جميع المقالات &larr;
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter.provider && (
+      {/* {siteMetadata.newsletter.provider && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
         </div>
-      )}
+      )} */}
     </>
   )
 }

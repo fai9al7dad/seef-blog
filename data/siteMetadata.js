@@ -5,7 +5,7 @@ const siteMetadata = {
   title: 'مدونة السيف',
   author: 'السيف',
   headerTitle: 'مدونة السيف',
-  description: 'مدونة',
+  description: 'مدونة تقنية، تحتوي على تصنيفين مبدئيا. 🚗 عالسريع، 📚 رحلة عبر الزمن',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',

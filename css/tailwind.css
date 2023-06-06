@@ -27,3 +27,40 @@ input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
+
+/* code {
+  direction: ltr;
+  font-size: 14px;
+} */
+ol li {
+  margin : 0px 1em
+}
+.prose :where(ul > li):not(:where([class~="not-prose"] *)) {
+  margin : 0px 1em
+}
+
+pre {
+  direction: ltr;
+}
+
+blockquote {
+  border-left: none !important;
+  position: relative;
+  padding-left: 0.5em;
+  position: relative;
+  padding: 1.5em;
+  line-height: 1.9em;
+  min-height: 2em;
+  border-right: 3px solid;
+}
+blockquote:before {
+  position: absolute;
+  top: 50%;
+  right: -59px;
+  width: 1em;
+  height: 1em;
+
+  line-height: 1.4em;
+  text-align: center;
+  transform: translateY(-50%);
+}
